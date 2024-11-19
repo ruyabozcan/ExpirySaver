@@ -1,0 +1,76 @@
+/* Genel ayarlar */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header .container h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .container p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+}
+
+main #offers h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.offer-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.offer {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.offer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.offer p {
+    margin: 0.5rem 0;
+}
+
+.offer .price {
+    color: #4caf50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
