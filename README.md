@@ -19,9 +19,9 @@ ExpirySaver is a platform designed to help reduce food waste by connecting users
 MIT
 
 
-# RUYA BOZCAN
-# ZEYNEP TUGBA UYANIK
-# MUHAMMAD DANIAL
-# RUSTAM AKHMEDOV
+RUYA BOZCAN
+ZEYNEP TUGBA UYANIK
+MUHAMMAD DANIAL
+RUSTAM AKHMEDOV
 
 # SENIOR PROJECT
