@@ -13,10 +13,6 @@ ExpirySaver is a platform designed to help reduce food waste by connecting users
 
 ## Technologies Used
 - HTML, CSS, JavaScript (jQuery)
-- Responsive design with CSS Grid
-
-## License
-MIT
 
 
 RUYA BOZCAN
