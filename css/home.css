@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  --navcolor: white;
+  --navfont: black;
+  --green: #055c5c;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+
+/* Navigation Bar */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--navcolor);
+  display: flex;
+  justify-content: flex-start; /* Sol hizalama */
+  align-items: center;
+  padding: 0 30px; /* Sağ ve sol boşlukları azaltarak daha yakın yapalım */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Resim ve yazıyı dikeyde ortalar */
+  font-size: 28px;
+  color: var(--navfont);
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px; /* Resim ile yazı arasındaki mesafeyi azalt */
+}
+
+
+.hamburger{
+  display:none;
+}
+
+
+.nav-bar ul{
+  display: flex;
+}
+
+
+.nav-bar ul li a {
+  display: block;
+  color: var(--navfont);
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+
+.nav-bar ul li a:hover {
+  color: var(--navcolor);
+  background-color: var(--navfont);
+}
+
+.nav-bar ul li a.active {
+  color: var(--navcolor);
+  background-color: var(--navfont);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  --navcolor: white;
+  --navfont: black;
+  --green: #055c5c;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+}
+/* Navigation Bar */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--navcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: var(--navfont);
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: var(--navfont);
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: var(--navcolor);
+  background-color: var(--navfont);
+}
+
+.nav-bar ul li a.active {
+  color: var(--navcolor);
+  background-color: var(--navfont);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--navcolor);
+  color: var(--navfont);
+  font-size: 18px;
+}
+
+footer img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+  .banner {
+    width: 100%;
+    height: 90vh;
+    background: url('cover.jpeg') no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--navfont);
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: var(--green);
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  
+  .nav-bar.active {
+    height: 450px;
+    z-index: 10;
+  }
+ 
+  .nav-bar ul{
+    display: block;
+    width:fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+
+  }
+  .nav-bar ul li a{
+    margin-bottom: 12px;
+
+  }
+  .banner{
+    background-image: none;
+  }
+}
+/* nav end */
+
+/* Banner Section */
+.banner {
+  width: auto;
+  height: auto;
+  background: url('img/coverimage.jpeg') no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  padding-top: 8rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.banner a {
+  display: inline-block;
+  font-size: 1em;
+  background: #111;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.banner a:hover {
+  letter-spacing: 6px;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 100px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.about-section .btn {
+  padding: 12px 30px;
+  background-color: var(--green);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-section .btn:hover {
+  background-color: #048d8d;
+}
+
+/* Highlights Section */
+.highlights {
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.box h3 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+  padding: 60px 100px;
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  padding: 12px 30px;
+  background-color: #111;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta .btn:hover {
+  background-color: #333;
+}
+
+/* Social Media Icons */
+.sociallist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Aralarındaki mesafe */
+  margin-top: 30px;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  width: 60px;  /* Yuvarlak ikon boyutu */
+  height: 60px;
+  background-color: #414141; /* Arka plan rengi */
+  border-radius: 50%; /* Yuvarlak hale getirmek */
+  color: #fff; /* Beyaz ikon rengi */
+  font-size: 30px; /* İkon boyutu */
+  text-align: center;
+  line-height: 60px; /* Ortalamak için */
+  transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease;
+}
+
+.social li a:hover {
+  transform: scale(1.2); /* Hover etkisiyle büyüme */
+  filter: brightness(1.3); /* Hoverda parlama efekti */
+}
+
+/* Specific colors for each platform */
+.social li a.facebook:hover {
+  background-color: #3b5998; /* Facebook için renk */
+}
+
+.social li a.twitter:hover {
+  background-color: #1DA1F2; /* Twitter için renk */
+}
+
+.social li a.instagram:hover {
+  background-color: #E4405F; /* Instagram için renk */
+}
+
+.social li a.email:hover {
+  background-color: #D44638; /* E-posta için renk */
+}
+

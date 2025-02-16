@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="img/ourlogo.png" alt="ExpirySaver Logo" style="height: 50px; margin-right: -250px;">
+        <div class="logo">Expiry <b style="color: #055c5c ;">Saver</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#login" class="active">Login</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="login-container">
+            <!-- Sekmeler -->
+            <div class="tab-container">
+                <div class="tab active" id="market-owner-tab">Market Owner</div>
+                <div class="tab" id="customer-tab">Customer</div>
+            </div>
+    
+            <!-- Market Owner Formu -->
+            <form id="market-owner-form" class="active" action="login.php" method="POST">
+                <h2>Market Owner Login</h2>
+                <div class="form-group">
+                    <label for="market-owner-username">Username</label>
+                    <input type="text" id="market-owner-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="market-owner-password">Password</label>
+                    <input type="password" id="market-owner-password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login as Market Owner</button>
+            </form>
+    
+            <!-- Customer Formu -->
+            <form id="customer-form" action="login.php" method="POST">
+                <h2>Customer Login</h2>
+                <div class="form-group">
+                    <label for="customer-username">Username</label>
+                    <input type="text" id="customer-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-password">Password</label>
+                    <input type="password" id="customer-password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login as Customer</button>
+            </form>
+    
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </main>
+
+        <!-- JavaScript Dosyasını Bağlama -->
+        <script src="js/login.js"></script>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    
+
+
+
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
