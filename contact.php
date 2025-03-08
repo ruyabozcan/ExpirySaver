@@ -35,7 +35,7 @@
 
 <!-- Chatbot Section -->
 <div class="chatbot" style="padding: 30px; background-color: rgba(151, 243, 199, 0.5); border-radius: 10px; margin-top: 30px;">
-    <p style="font-size: 23px; text-align: center; color: #055c5c;">Chat Bot Support <img src="bot-mini.png" alt="" height="20"></p>
+    <p style="font-size: 23px; text-align: center; color: #00615f;">Chat Bot Support <img src="bot-mini.png" alt="" height="20"></p>
 
     <!-- Chat Container -->
     <div id="container" class="container">
@@ -47,7 +47,7 @@
 
     <!-- Help & FAQ Section -->
     <div class="help">
-        <p style="font-size: 23px; text-align: center; padding: 10px; color: #055c5c;">Help & FAQs</p>
+        <p style="font-size: 23px; text-align: center; padding: 10px; color: #00615f;">Help & FAQs</p>
 
         <!-- FAQ Accordion -->
         <button class="accordion">How does ExpirySaver work?</button>
