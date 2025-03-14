@@ -1,11 +1,10 @@
-# Food waste management system
+# ExpirySaver
 <!-- <img src="img/coverimage.jpeg"> -->
-<p>  The basic concept of this project  Food Waste Management is to collect theexcess/leftover food from donors such as hotels, restaurants, marriage halls, etc and distribute to  the  needy people .</p>
 <h2>Tools and Technologies</h2> 
 <ul>
  <li>Frontend : HTML, CSS,  JavaScript</li>
- <li>Backend  : php</li>
- <li>webserver: Xampp Server</li>
+ <li>Backend  : PHP/li>
+ <li>webserver: XAMPP SERVER</li>
  <li>Database: MySQL </li>
 </ul>
 
@@ -15,12 +14,8 @@
     <li>Delivery</li></ul>
    <br>
     <h3>User </h3>
-   <!-- <img src="img/User-module.jpg"> -->
-    <img src="img/mobile.jpg">
     <h3>Admin </h3>
-    <img src="img/Admin.jpg">
      <h3>Delivery </h3>
-    <img src="img/Delivery_module.jpg">
     <h3>features:</h3>
     <ul><li>Mobile Screen friendly website.</li>
       <li>chatbot support</li>
