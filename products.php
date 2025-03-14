@@ -29,6 +29,11 @@
         header {
             position: relative;
         }
+
+            a {
+        color: #04a59f;
+        text-decoration: none;
+    }
     </style>
 
         <!-- Modal Search Start -->
