@@ -1,38 +1,30 @@
-# ExpirySaver
-<!-- <img src="img/coverimage.jpeg"> -->
-<h2>Tools and Technologies</h2> 
-<ul>
- <li>Frontend : HTML, CSS,  JavaScript</li>
- <li>Backend  : PHP/li>
- <li>webserver: XAMPP SERVER</li>
- <li>Database: MySQL </li>
-</ul>
+# **ExpirySaver** 🍏🥫
+**ExpirySaver** is a web platform designed to reduce food waste and save consumers money by offering discounted prices on surplus food from stores and restaurants. Inspired by **Too Good To Go**, this project is built using **PHP, MySQL, HTML, CSS, and JavaScript**.
 
- <h2>The system has three modules. </h2>
-    <ul><li>User</li>
-    <li>Admin</li>
-    <li>Delivery</li></ul>
-   <br>
-    <h3>User </h3>
-    <h3>Admin </h3>
-     <h3>Delivery </h3>
-    <h3>features:</h3>
-    <ul><li>Mobile Screen friendly website.</li>
-      <li>chatbot support</li>
-      <li>Secure Login</li>
-      </ul>
-      <h2>Mobile Screen friendly website.</h2>
-      <img src="img/responsive.gif">
-      <h2>chatbot support</h2>
-      <img src="img/chatbotsupport.jpg">
-      <h2>Secure Login</h2>
-      <img src="img/hash-flow.png">
-      <h2>How to run</h2>
-      <ol>
-       <li>Download the project zip file</li>
-       <li> Extract the file and copy the folder</li>
-       <li>Paste inside root directory(for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/Html)</li>
-       <li> Open PHPMyAdmin (http://localhost/phpmyadmin)</li>
-       <li> Create a database</li>
-       <li>Import demo.sql file(inside database folder)</li>
-       <li> Run the script http://localhost/folderName </li> </ol>
+## **📌 Features**
+- 🏪 **For Businesses:** Sell surplus food before expiration and reduce waste.
+- 🛍️ **For Consumers:** Buy discounted products that are nearing their expiration date.
+- 🔐 **User Authentication:** Separate login system for consumers and store owners.
+- 📍 **Location-Based Offers:** Displays the nearest discounted products to users.
+- 📦 **Product Management:** Stores can update inventory and prices.
+- 💬 **Chatbot Integration:** Provides quick support for users.
+- 📧 **Email Notifications:** Sends confirmation and notifications to users (using PHPMailer).
+
+---
+
+## **🚀 Technologies Used**
+| Layer          | Technology                       |
+|----------------|-----------------------------------|
+| **Frontend**   | HTML5, CSS3, JavaScript, Bootstrap |
+| **Backend**    | PHP, REST API                    |
+| **Database**   | MySQL                             |
+| **Others**     | PHPMailer, GitHub, Visual Studio Code |
+
+---
+
+## **💻 Installation & Setup**
+### **1️⃣ Clone the Repository**
+To get started with the project, clone the repository to your local machine:
+```bash
+git clone https://github.com/ruyabozcan/ExpirySaver.git
+cd ExpirySaver
