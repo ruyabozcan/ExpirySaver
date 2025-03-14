@@ -43,7 +43,7 @@
 .featured-products h2 {
     font-size: 2.5em;
     margin-bottom: 50px; /* Başlık ile ürünler arasındaki mesafe arttı */
-    color: #055c5c;
+    color: #00615f;
 }
 
 /* Ürünleri daha iyi hizalamak için */
@@ -95,14 +95,14 @@
     display: inline-block;
     padding: 12px 25px;
     font-size: 1.1em;
-    background-color: #055c5c;
+    background-color: #00615f;
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .product-card .btn-sm:hover {
-    background-color: #04a59f;
+    background-color: #00615f;
 }
 
 /* Mobil uyumluluk */

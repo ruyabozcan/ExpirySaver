@@ -71,7 +71,7 @@
         position: fixed;
         bottom: 80px; /* Higher than the footer */
         right: 20px;
-        background-color: #06c167; /* Green background color */
+        background-color: #00615f; /* Green background color */
         border-radius: 50%; /* Make it round */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
         padding: 10px;
@@ -89,7 +89,7 @@
         }
 
         .chatbot-icon:hover {
-        background-color: #04b159; /* Hover color */
+        background-color: #00615f; /* Hover color */
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
         }
 
@@ -109,7 +109,7 @@
         }
 
         .chat-header {
-        background-color: #06c167;
+        background-color: #00615f;
         color: white;
         padding: 10px;
         border-top-left-radius: 10px;
@@ -140,7 +140,7 @@
         .chat-footer button {
         margin-left: 10px;
         padding: 5px 10px;
-        background-color: #06c167;
+        background-color: #00615f;
         color: white;
         border: none;
         border-radius: 5px;

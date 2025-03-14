@@ -36,7 +36,7 @@
 }
 
 .tab.active {
-    background-color: #055c5c;
+    background-color: #00615f;
     color: white;
     font-weight: bold;
 }
@@ -55,7 +55,7 @@ button.btn {
     display: inline-block;
     width: 100%;
     padding: 12px;
-    background-color: #055c5c;
+    background-color: #00615f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -66,7 +66,7 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: #044b4b;
+    background-color: #00615f;
 }
 
 .form-group {
@@ -92,7 +92,7 @@ button.btn:hover {
 }
 
 .form-group input:focus {
-    border-color: #055c5c;
+    border-color: #00615f;
 }
 
 p {
@@ -102,7 +102,7 @@ p {
 }
 
 p a {
-    color: #055c5c;
+    color: #00615f;
     text-decoration: none;
     font-weight: 500;
 }
