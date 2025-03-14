@@ -46,4 +46,10 @@
     header {
         position: fixed;
     }
+
+
+    .nav-bar ul li a{
+    text-decoration: none;
+
+  }
 </style>
