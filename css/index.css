@@ -62,6 +62,9 @@ header {
   border-radius: 50px;
   transition: 0.2s;
   margin: 0 5px;
+  border-bottom: none; /* Alt çizgiyi kaldırır */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+
 }
 
 
@@ -232,6 +235,7 @@ footer img {
   }
   .nav-bar ul li a{
     margin-bottom: 12px;
+    text-decoration: none;
 
   }
   .banner{
