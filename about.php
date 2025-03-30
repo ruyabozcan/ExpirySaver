@@ -1,12 +1,11 @@
 <?php include('header.php'); ?>
 
 <!-- Cover Section -->
-<div class="coverc" style="width: 100%; height: 400px; background: url('img/about3.jpg') no-repeat center center; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center; padding: 20px;">
-    <p class="title" style="font-size: 36px; color: white; font-weight: 700; margin: 0; padding: 10px; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);">
-        Welcome to <span style="color: #00615f;">ExpirySaver</span>
-    </p>
+<div class="coverc d-flex justify-content-center align-items-center text-center" style="height: 400px; background: linear-gradient(135deg, rgba(0, 97, 95, 0.9), rgba(0, 97, 95, 0.5)), url('img/about3.jpg') no-repeat center center; background-size: cover;">
+    <div class="text-white p-4 border border-5 rounded shadow-lg" style="max-width: 600px; border-color: #00615f;">
+        <h1 class="display-4 font-weight-bold mb-3">Welcome to <span style="color: #00615f;">ExpirySaver</span></h1>
+    </div>
 </div>
-
 
 <!-- About Us Section -->
 <p class="heading" style="text-align: center; font-size: 32px; font-weight: bold; margin-top: 20px; color: #333;">About Us</p>
@@ -21,25 +20,53 @@
 </div>
 
 
-<!-- Services Section -->
-<section id="services">
-    <h2 style="text-align: center; font-size: 30px; margin-top: 40px;">Our Services</h2>
-    <div class="service" style="text-align: center; margin: 20px;">
-        <i class="fa fa-leaf" style="font-size: 40px; color: #00615f;"></i>
-        <h3>Sustainability</h3>
-        <p>Our platform helps reduce food waste and promotes sustainability.</p>
+<!-- Team Section -->
+<p class="heading" style="text-align: center; font-size: 32px; font-weight: bold; margin-top: 40px; color: #333;">Meet Our Team</p>
+<div class="team" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+    <!-- Zeynep -->
+    <div class="team-member" role="group" aria-labelledby="team-member-zeynep" style="text-align: center; width: 200px;">
+        <h3 id="team-member-zeynep">Zeynep</h3>
+        <p>Software Developer</p>
+        <a href="mailto:zeynep@example.com" style="color: #00615f; text-decoration: none;" aria-label="Contact Zeynep">Contact</a>
     </div>
-    <div class="service" style="text-align: center; margin: 20px;">
-        <i class="fa fa-money" style="font-size: 40px; color: #00615f;"></i>
-        <h3>Discounted Products</h3>
-        <p>Get high-quality food at a lower cost by purchasing surplus items.</p>
+
+    <!-- Rüya -->
+    <div class="team-member" role="group" aria-labelledby="team-member-ruya" style="text-align: center; width: 200px;">
+        <h3 id="team-member-ruya">Rüya</h3>
+        <p>Software Developer</p>
+        <a href="mailto:ruya@example.com" style="color: #00615f; text-decoration: none;" aria-label="Contact Rüya">Contact</a>
     </div>
-    <div class="service" style="text-align: center; margin: 20px;">
-        <i class="fa fa-truck" style="font-size: 40px; color: #00615f;"></i>
-        <h3>Fast Delivery</h3>
-        <p>Enjoy quick and convenient delivery options for your purchases.</p>
+
+    <!-- Muhammad -->
+    <div class="team-member" role="group" aria-labelledby="team-member-muhammad" style="text-align: center; width: 200px;">
+        <h3 id="team-member-muhammad">Muhammad</h3>
+        <p>Software Developer</p>
+        <a href="mailto:muhammad@example.com" style="color: #00615f; text-decoration: none;" aria-label="Contact Muhammad">Contact</a>
     </div>
-</section>
+
+    <!-- Rustam -->
+    <div class="team-member" role="group" aria-labelledby="team-member-rustam" style="text-align: center; width: 200px;">
+        <h3 id="team-member-rustam">Rustam</h3>
+        <p>Software Developer</p>
+        <a href="mailto:rustam@example.com" style="color: #00615f; text-decoration: none;" aria-label="Contact Rustam">Contact</a>
+    </div>
+</div>
+
+<!-- Survey Section -->
+<p class="heading" style="text-align: center; font-size: 32px; font-weight: bold; margin-top: 40px; color: #333;">We Value Your Opinion</p>
+<div class="survey" style="text-align: center; margin-top: 20px;">
+    <form action="submit-survey.php" method="POST">
+        <label for="feedback" style="font-size: 16px; color: #555;">How would you rate our service?</label>
+        <select id="feedback" name="feedback" style="margin: 8px 0; padding: 8px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc;">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+        <br>
+        <button type="submit" style="background-color: #00615f; color: white; padding: 8px 16px; border: none; cursor: pointer; border-radius: 5px; font-size: 14px;">Submit</button>
+    </form>
+</div>
 
 <!-- Location Map Section -->
 <div class="map">
@@ -53,6 +80,8 @@
 
 <!-- Footer -->
 <?php include('footer.php'); ?>
+
+
 
 <!-- Additional Styles for Responsive Design -->
 <style>
@@ -114,5 +143,82 @@
             align-items: center;
         }
     }
-</style>
+  /* Cover Section */
+  .coverc {
+        width: 100%;
+        height: 400px;
+        background: url('img/about3.jpg') no-repeat;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        padding-top: 8rem;
+    }
 
+    /* Title Styling */
+    .title {
+        font-size: 38px;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Paragraph Styling */
+    .para p {
+        font-size: 23px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Team Styling */
+    .team-member img {
+        border-radius: 50%;
+    }
+
+    .team-member h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .timeline {
+        border-left: 3px solid #00615f;
+        padding-left: 20px;
+    }
+
+    /* Map Styling */
+    .map {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .map iframe {
+        width: 80%;
+        max-width: 800px;
+        height: 400px;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 767px) {
+        .para p {
+            font-size: 16px;
+        }
+
+        .map iframe {
+            width: 90%;
+            height: 250px;
+        }
+
+        .title {
+            font-size: 28px;
+            margin: 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .team {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
