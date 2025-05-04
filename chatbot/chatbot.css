@@ -151,6 +151,13 @@
   }
 
 
+  zapier-interfaces-chatbot-embed {
+    position: fixed;
+    bottom: 20px;  /* Sayfanın altına 20px mesafe */
+    right: 20px;   /* Sayfanın sağına 20px mesafe */
+    z-index: 9999; /* Diğer öğelerin üstünde görünmesini sağlar */
+}
+
 /* Style for the header */
 h1 {
   text-align: center;

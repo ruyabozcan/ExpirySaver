@@ -36,9 +36,6 @@
         </nav>
     </header>
 
-
-
-    
     <script>
         document.querySelector(".hamburger").addEventListener("click", function() {
             document.querySelector(".nav-bar").classList.toggle("active");
@@ -50,9 +47,141 @@
         position: fixed;
     }
 
-
-    .nav-bar ul li a{
-    text-decoration: none;
-
-  }
+    .nav-bar ul li a {
+        text-decoration: none;
+    }
 </style>
+
+<!-- Chatbot Embed Code -->
+<script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+
+<!-- Chatbot Wrapper -->
+<div id="chatbot-wrapper" style="position: fixed; bottom: 20px; right: 100px; z-index: 9999;">
+<!-- Chatbot Icon at Footer -->
+<div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatContainer()">
+    <img src="img/bot-mini.png" alt="Chatbot" />
+</div>
+
+
+    <!-- Chatbot Embed -->
+    <zapier-interfaces-chatbot-embed
+        id="chatbot-embed"
+        is-popup="false"
+        chatbot-id="cma8hrywe003gc7vdaz2mpjx8"
+        height="600px"
+        width="400px"
+        style="display: none; position: fixed; bottom: 80px; right: 100px; z-index: 9999;">
+    </zapier-interfaces-chatbot-embed>
+</div>
+
+<script>
+    // Toggle visibility of chatbot on icon click
+    var chatbotEmbed = document.getElementById('chatbot-embed');
+    var chatbotIcon = document.getElementById('chatbot-icon');
+
+    chatbotIcon.addEventListener('click', function() {
+        // Toggle the visibility of the chatbot
+        if (chatbotEmbed.style.display === 'none' || chatbotEmbed.style.display === '') {
+            chatbotEmbed.style.display = 'block';
+        } else {
+            chatbotEmbed.style.display = 'none';
+        }
+    });
+</script>
+
+
+
+
+<style>
+/* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px; /* SAĞ ALT KÖŞEYE TAM OTURULDU */
+    right: 20px;
+    background-color: #00615f;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chatbot-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Chat Container */
+.chat-container {
+    position: fixed;
+    bottom: 90px; /* ikonun üstünde görünsün */
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #00615f;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-footer {
+    padding: 10px;
+    display: flex;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-footer button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #00615f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    padding-bottom: 150px; /* ikon footer'la çakışmasın */
+}
+</style>
+
+
+</body>
+</html>
