@@ -1,6 +1,11 @@
+<?php include('products.php'); ?>
+
+<!-- COMMENTED OUT for reference
 <?php include('header.php'); ?>
+-->
 
 <!-- Featured Products Section -->
+ <!-- COMMENTED OUT for reference
 <section class="featured-products">
     <h2>Top Picks For You</h2>
     <div class="product-wrapper">
@@ -102,8 +107,10 @@
         </div>
     </div>
 </section>
+-->
 
 <!-- CSS - Styles for Professional Design -->
+<!-- COMMENTED OUT for reference
 <style>
 /* Featured Products Section */
 .featured-products {
@@ -192,5 +199,5 @@
     }
 }
 </style>
+-->
 
-<?php include('footer.php'); ?>

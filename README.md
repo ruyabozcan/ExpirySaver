@@ -41,3 +41,8 @@
        <li> Create a database</li>
        <li>Import demo.sql file(inside database folder)</li>
        <li> Run the script http://localhost/folderName </li> </ol>
+
+## How to run via Docker
+- Install docker compose
+- Start docker daemon
+- Run `docker compose up --build`
