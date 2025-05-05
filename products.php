@@ -1,4 +1,7 @@
 <?php include('header.php'); ?>
+<?php include('api.php'); ?>
+
+
 <head>
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +60,8 @@
 
                 <div class="row g-4">
                     <div class="col-lg-12">
+
+                        <?php if ($showProductSearch) { ?>
                         <div class="row g-4">
                             <div class="col-xl-3">
                                 <div class="input-group w-100 mx-auto d-flex">
@@ -77,9 +82,10 @@
                                 </div>
                             </div>
                         </div>
-
+                        <?php } ?>
 
                         <div class="row g-4">
+                            <?php if ($showProductFilteringBanner) { ?>
                             <div class="col-lg-3">
                                 <div class="row g-4">
                                     <div class="col-lg-12">
@@ -226,8 +232,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-9">
+                            <?php } ?>
+
+                            <div class="col-lg-<?php if ($showProductFilteringBanner) { ?>9<?php } else { ?>12<?php } ?>">
                                 <div class="row g-4 justify-content-center">
+
+                                <?php
+                                    $products = getProducts();
+
+                                    // Loop through each product and generate a product card
+                                    foreach ($products as $product) {
+                                        // Ensure the necessary keys exist in the response
+                                        $productName = $product['productName'] ?? 'No Name';
+                                        $productDescription = $product['productDescription'] ?? 'No Description';
+                                        $productImage = 'https://myapprack.com/expirysaver/uploads/docs/' . $product['productPic'] ?? 'img/fruite-item-1.jpg'; // Fallback image
+                                        $productPrice = $product['rate'] ?? '0.00';
+                                        $productId = $product['id'] ?? '#'; // Fallback ID or URL
+                                        $productUnit = $product['unit'] ?? '#'; // Fallback ID or URL
+                                        ?>
+
+                                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                                <div class="rounded position-relative border border-secondary fruite-item">
+                                                    <div class="fruite-img">
+                                                        <img src="<?= htmlspecialchars($productImage) ?>" class="img-fluid w-100 rounded-top" alt="<?= htmlspecialchars($productName) ?>">
+                                                    </div>
+                                                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                    <div class="p-4 rounded-bottom">
+                                                        <h4><?= htmlspecialchars($productName) ?></h4>
+                                            <p><?= htmlspecialchars($productDescription) ?></p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-5 fw-bold mb-0">$<?= htmlspecialchars($productPrice) ?> / <?= htmlspecialchars($productUnit) ?></p>
+                                                <a href="product-detail.php?id=<?= htmlspecialchars($productId) ?>" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                <?php } ?>
+                                
+                                    <!-- COMMENTED OUT CODE FOR REFERENCE
+
                                     <div class="col-md-6 col-lg-6 col-xl-4">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
@@ -372,6 +418,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    -->
                                     <div class="col-12">
                                         <div class="pagination d-flex justify-content-center mt-5">
                                             <a href="#" class="rounded">&laquo;</a>

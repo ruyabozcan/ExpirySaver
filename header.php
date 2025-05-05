@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="chatbot/chatbot.css">
 </head>
 
+<?php $showProductFilteringBanner  = false; ?>
+<?php $showProductSearch = false; ?>
+
 <body>
 <header>
         <a href="index.php">

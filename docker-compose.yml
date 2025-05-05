@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-api
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/vhost.conf:/etc/apache2/sites-available/000-default.conf
